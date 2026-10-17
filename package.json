@@ -1,0 +1,46 @@
+{
+  "name": "pixelseo-tools",
+  "version": "3.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:matrix": "vitest run tests/matrix",
+    "test:e2e": "playwright test",
+    "validate": "npm run lint && npm run typecheck && npm run test && npm run build"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "jszip": "^3.10.1",
+    "lucide-react": "^1.16.0",
+    "next": "^15.2.1",
+    "next-themes": "^0.4.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "sonner": "^2.0.8",
+    "tailwindcss": "^4.3.3",
+    "zod": "^4.6.7",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/jszip": "^3.4.1",
+    "@types/node": "^22.13.9",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^6.1.2",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^15.5.28",
+    "typescript": "^5.8.2",
+    "vitest": "^5.0.5"
+  },
+  "overrides": {
+    "postcss": "^8.5.30",
+    "braces": "^3.0.3",
+    "micromatch": "^4.0.8"
+  }
+}

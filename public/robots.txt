@@ -1,0 +1,11 @@
+# PixelSEO Tools Robots.txt
+User-agent: *
+Allow: /
+Allow: /tools/*
+Allow: /about
+Allow: /faq
+Allow: /privacy
+Allow: /terms
+Allow: /contact
+
+Sitemap: https://pixelseo.tools/sitemap.xml
